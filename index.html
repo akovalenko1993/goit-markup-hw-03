@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
+    <link href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css" rel="stylesheet" >
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
         <nav>
         <a href="index.html" class="logo">Web<span class="logo-black-color">Studio</span></a>
-        <ul>
+        <ul class="nav-list">
         <li class="nav-links "><a href="index.html" class="nav-links-item current">Студия</a></li>
         <li class="nav-links"><a href="portfolio.html" class="nav-links-item">Портфолио</a></li>
         <li class="nav-links"><a href="" class="nav-links-item">Контакты</a></li>
@@ -26,62 +27,64 @@
     </header>
     <main>
 <!--hero section-->
-<section class="hero-section">
-    <h1>Эффективные решения для вашего бизнеса</h1>
+<section class="hero-section ">
+    <div class="container column">
+    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
     <button type="button" class="hero-button accent">Заказать услугу</button>
+    </div>
 </section>
 <!--company rules-->
 <section class="company-rules-section">
     <h2>Наши принципы</h2>
-    <ul class="company-rules-section-ul">
-        <li>
+    <ul class="company-rules-section-ul container ">
+        <li class="company-rules-item ">
             <h3 class="company-rules-section-h3">Внимание к деталям</h3>
             <p class="company-rules-section-p"> Идейные соображения, а также начало повседневной работы формированию позиции</p>
         </li>
-        <li>
+        <li class="company-rules-item ">
             <h3 class="company-rules-section-h3">Пунктуальность</h3>
             <p class="company-rules-section-p">Задача организации, в особенности же рамки и место обучения кадров влечет за собой</p>
         </li>
-        <li>
+        <li class="company-rules-item ">
             <h3 class="company-rules-section-h3">Планирование</h3>
             <p class="company-rules-section-p">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
-        <li>
+        <li class="company-rules-item ">
             <h3 class="company-rules-section-h3">Современные технологии</h3>
             <p class="company-rules-section-p">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
     </ul>
 </section>
 <!--how we do-->
-<section class="how-we-do-section">
+<section class="how-we-do-section ">
 <h2 class="how-we-do-section-h2">Чем мы занимаемся</h2>
-<ul class="how-we-do-section-ul">
-    <li><img src="images/img1_HowWeDo.jpg" alt="Человек работает на клаасном рабочем месте" width="370"></li>
-    <li><img src="images/img2_HowWeDo.jpg" alt="Разрабатывается приложение на телефон" width="370"></li>
-    <li><img src="images/img3_HowWeDo.jpg" alt="Изображение мозаики на планшете" width="370"></li>
+<ul class="how-we-do-section-ul container">
+    <li class="how-we-do-item"><img src="images/img1_HowWeDo.jpg" alt="Человек работает на клаасном рабочем месте" width="370"></li>
+    <li class="how-we-do-item"><img src="images/img2_HowWeDo.jpg" alt="Разрабатывается приложение на телефон" width="370"></li>
+    <li class="how-we-do-item"><img src="images/img3_HowWeDo.jpg" alt="Изображение мозаики на планшете" width="370"></li>
 </ul>
 </section>
 
 <!--Our Team-->
 <section class="our-team-section">
 <h2 class="our-team-section-h2">Наша команда</h2>
-    <ul class="our-team-section-ul">
-    <li class="list-item">
+    <ul class="our-team-section-ul container">
+    <li class="our-team-item">
         <img src="images/img1_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270">
         <h3 class="our-team-section-h3">Игорь Демьяненко</h3>
         <p lang="en" class="our-team-section-p">Product Designer</p>
     </li>
-    <li class="list-item">
+    <li class="our-team-item">
             <img src="images/img2_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270">
             <h3 class="our-team-section-h3">Ольга Репина</h3>
             <p lang="en" class="our-team-section-p">Frontend Developer</p>
     </li>
-    <li class="list-item">
+    <li class="our-team-item">
             <img src="images/img3_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270">
             <h3 class="our-team-section-h3">Николай Тарасов </h3>
             <p lang="en" class="our-team-section-p">Marketing</p>
     </li>
-    <li class="list-item">
+    <li class="our-team-item">
             <img src="images/img4_OurTeam(1).jpg" alt="Игорь Демьяненко" width="270">
             <h3 class="our-team-section-h3">Михаил Ермаков</h3>
             <p lang="en" class="our-team-section-p">UI Designer</p>
