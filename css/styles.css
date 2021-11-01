@@ -65,7 +65,8 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.hero-section > h1 {
+
+.hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -75,6 +76,8 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .nav-links-item:hover,
@@ -92,11 +95,13 @@ img {
 .filter-list {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .nav-list {
   display: flex;
 }
+
 .auth-list {
   display: flex;
 }
@@ -136,23 +141,23 @@ img {
   margin-right: 50px;
 }
 .hero-button {
+  display: block;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
-  display: flex;
-  /* text-align: flex-end; */
   letter-spacing: 0.06em;
   cursor: pointer;
-  border: none;
-  border-radius: 4px;
+
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  width: 200px;
-  height: 50px;
-  justify-content: center;
 }
 
 .hero-button:hover,
@@ -222,6 +227,7 @@ img {
 
 .company-rules-section-ul {
   list-style: none;
+  display: flex;
 }
 
 .how-we-do-section-h2 {
@@ -233,8 +239,9 @@ img {
   color: var(--title-text-color);
 }
 
-.how-we-do-section-ul.container {
+.how-we-do-section-ul {
   list-style: none;
+  display: flex;
 }
 .how-we-do-section > .container {
   margin-top: 50px;
@@ -248,10 +255,12 @@ img {
   background-color: var(--light-bcg-color);
   padding-top: 94px;
   margin-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team-section-ul {
   list-style: none;
-  /* margin-top: 50px; */
+  display: flex;
+  margin-top: 50px;
 }
 .our-team-section-ul.container {
   margin-top: 50px;
@@ -285,14 +294,11 @@ img {
   margin-bottom: 30px;
 }
 
-.header {
+.header .container {
   background-color: var(--primary-white-color);
+  display: flex;
 }
 
-.header .container {
-  align-items: center;
-  justify-content: flex-start;
-}
 .header > ul {
   margin: 0px;
   padding: 0px;
@@ -330,9 +336,7 @@ img {
   list-style: none;
   margin-top: 50px;
   margin-bottom: 90px;
-  /* display: flex; */
-}
-.our-products-list.container {
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -396,9 +400,6 @@ img {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  display: flex;
-  /* justify-content: center; */
-  /* align-content: center; */
 }
 .column {
   flex-direction: column;
