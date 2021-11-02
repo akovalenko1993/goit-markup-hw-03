@@ -59,6 +59,8 @@ img {
   color: var(--accent-color);
   text-decoration: none;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .hero-section {
   background-color: var(--bcg-color);
@@ -92,18 +94,17 @@ img {
   /* color: var(--primary-white-color); */
   background-color: var(--accent-color);
 }
-.filter-list {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
 .nav-list {
   display: flex;
 }
 
 .auth-list {
   display: flex;
+}
+.filter-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links-item {
@@ -120,8 +121,8 @@ img {
 
 .auth-links-item {
   display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -196,10 +197,13 @@ img {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px 6px 22px;
-  margin-right: 8px;
+  /* margin-right: 8px; */
 }
-.filter-item:hover,
-.filter-item:focus {
+
+.filter-item-btn-all:hover,
+.filter-item-btn-all:focus,
+.filter-item-btn:hover,
+.filter-item-btn:focus {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -231,6 +235,7 @@ img {
 }
 
 .how-we-do-section-h2 {
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -243,9 +248,6 @@ img {
   list-style: none;
   display: flex;
 }
-.how-we-do-section > .container {
-  margin-top: 50px;
-}
 
 .how-we-do-item:not(:last-child) {
   margin-right: 30px;
@@ -254,19 +256,18 @@ img {
 .our-team-section {
   background-color: var(--light-bcg-color);
   padding-top: 94px;
-  margin-top: 94px;
   padding-bottom: 94px;
 }
 .our-team-section-ul {
   list-style: none;
   display: flex;
-  margin-top: 50px;
 }
 .our-team-section-ul.container {
   margin-top: 50px;
   padding-bottom: 94px;
 }
 .our-team-section-h2 {
+  margin-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -281,7 +282,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  margin-top: 30px;
 }
 
 .our-team-section-p {
@@ -290,10 +290,11 @@ img {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 10px;
-  margin-bottom: 30px;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header .container {
   background-color: var(--primary-white-color);
   display: flex;
@@ -307,7 +308,6 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
   background-color: var(--bcg-color);
 }
 
@@ -327,15 +327,13 @@ img {
   margin-top: 9px;
 }
 .our-products {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-.our-products .container {
-  justify-content: center;
-}
+
 .our-products-list {
   list-style: none;
   margin-top: 50px;
-  margin-bottom: 90px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -343,6 +341,17 @@ img {
 .our-products-item {
   margin-right: 30px;
   margin-bottom: 30px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.our-product-items-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.our-product-items-text > *:not(:last-child) {
+  margin-bottom: 4px;
 }
 .our-products-item:nth-child(3n) {
   margin-right: 0;
@@ -387,30 +396,20 @@ img {
   color: var(--accent-color);
 }
 
-.company-rules-section > h2 {
-  display: none;
-}
-
 .company-rules-section {
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.column {
-  flex-direction: column;
-}
-.company-rules-section-ul > li {
-  width: 270px;
 }
 
 .company-rules-item {
+  width: 270px;
   margin-right: 30px;
 }
+
 .company-rules-item > p {
   margin-top: 10px;
 }
@@ -420,37 +419,30 @@ img {
 }
 
 .how-we-do-section {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.hero-section .container.column {
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-}
 .hero-button.accent {
   margin-top: 30px;
 }
-.hero-title {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 
-  color: #ffffff;
-  width: 696px;
-}
 .our-team-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .our-team-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--primary-white-color);
+}
+.our-team-item-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.our-team-item-text > *:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .nav {
