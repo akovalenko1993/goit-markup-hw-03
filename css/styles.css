@@ -62,6 +62,13 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.footer .logo {
+  display: inline-block;
+  margin-right: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
 .hero-section {
   background-color: var(--bcg-color);
   padding-top: 200px;
@@ -104,6 +111,7 @@ img {
 .filter-list {
   list-style: none;
   display: flex;
+
   justify-content: center;
 }
 
@@ -231,7 +239,7 @@ img {
 
 .company-rules-section-ul {
   list-style: none;
-  display: flex;
+  display: inline-flex;
 }
 
 .how-we-do-section-h2 {
@@ -247,6 +255,7 @@ img {
 .how-we-do-section-ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .how-we-do-item:not(:last-child) {
@@ -261,11 +270,9 @@ img {
 .our-team-section-ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
-.our-team-section-ul.container {
-  margin-top: 50px;
-  padding-bottom: 94px;
-}
+
 .our-team-section-h2 {
   margin-bottom: 50px;
   font-weight: bold;
@@ -311,10 +318,6 @@ img {
   background-color: var(--bcg-color);
 }
 
-.footer address {
-  margin-top: 20px;
-}
-
 .footer-p {
   color: var(--primary-white-color);
   font-style: normal;
@@ -335,7 +338,10 @@ img {
   list-style: none;
   margin-top: 50px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .our-products-item {
@@ -398,11 +404,14 @@ img {
 
 .company-rules-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .container {
   width: 1200px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .company-rules-item {
@@ -419,7 +428,6 @@ img {
 }
 
 .how-we-do-section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
