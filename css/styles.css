@@ -340,8 +340,6 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-left: auto;
-  padding-right: auto;
 }
 
 .our-products-item {
